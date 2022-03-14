@@ -15,8 +15,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        'word' => 'Hello World!',
+        'word' => 'Hello World',
     ];
 
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('/sitiweb', function () {
+    return view('sitiweb');
+})->name('sitiweb');
+
+Route::get('/chi-sono', function () {
+    return view('chi-sono');
+})->name('chi-sono');
+
+Route::get('/contatti', function () {
+    return view('contatti');
+})->name('contatti');
+
+Route::get('/altro', function () {
+    return view('altro');
+})->name('altro');
