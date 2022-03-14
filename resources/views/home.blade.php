@@ -9,7 +9,9 @@
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <h1>
+        {{ $word }}
+    </h1>
 </body>
 
 </html>
